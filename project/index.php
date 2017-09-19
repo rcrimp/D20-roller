@@ -1,14 +1,6 @@
 <?php 
-$diceroll = rand(1,20); 
+$timestamp = time();
+#header or readfile ??
+header('Location: roll.php?fbrefresh='.$timestamp);
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-    	<title>You rolled a <?php echo($diceroll) ?></title>
-	</head>
-	<body>
-		<img src = 'img/<?php echo($diceroll) ?>.png'>
-		<a href="github.com/rcrimp/D20-roller">Github</a>
-	</body>
-</html>
